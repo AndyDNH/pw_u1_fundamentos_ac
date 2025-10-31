@@ -1,0 +1,41 @@
+/*2.-Selector por clase*/
+.titulos{
+    color: red;
+    font-size: 30px;
+    background-color: blue;
+}
+
+/*3.-Selector por ID*/
+/*Tiene el simbolo de numeral*/
+#id_titulo {
+    color: yellow;
+    background-color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*4.-Selector Pseudo Clase cuando exista eventos*/
+i:hover{
+    color: aquamarine;
+    font-size: 50px;
+}
+
+input:focus{
+    border-color: blue;
+    background: red;
+}
+
+/*Por atributo*/
+[id]{
+    color:green;
+    font-size: 40px;
+}
+
+img[alt*="uce"] {
+ width: 80px;
+ height: 50px;   
+}
+
+/*6. Selector Universal*/
+*{
+    /*declaraciones*/
+}

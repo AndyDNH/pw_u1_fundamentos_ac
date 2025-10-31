@@ -1,0 +1,28 @@
+   /*1. por tipo de elemento HTML*/
+   h1 {
+            color:red;
+            background: blue;
+            border: 1px solid black;
+            width: 600px;
+            height: 90px;
+        }
+
+        h2{
+            color: #0098D4;
+            background-color: rgb(170, 170, 170);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 40px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid blue;
+        }
+
+        p{
+            background: yellow;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body {
+            background:black;
+        }
+    
