@@ -46,11 +46,11 @@ function evaluarOperacion(tipo) {
     if (tipo ===  '+') {
         resultado = sumar(num1,num2);
     }if (tipo ===  '-') {
-        
+        resultado = restar(num1,num2);
     }if (tipo ===  '*') {
-        
+        resultado = multiplicar(num1,num2);
     }if (tipo ===  '/') {
-        
+        resultado = dividir(num1,num2);
     }
     document.getElementById('id_resultado').innerText = resultado;
 }

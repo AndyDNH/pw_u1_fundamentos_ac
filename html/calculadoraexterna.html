@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Externa</title>
     <script src="../js/jsexterno.js"></script>
+    <link rel="stylesheet" href="../css/calculadora.css">
 </head>
 
 <body>
@@ -32,11 +33,17 @@
         <hr>
 
         <button onclick="evaluarOperacion('+')">Sumar</button>
-        <button>Restar</button>
-        <button>Multiplicar</button>
-        <button>Dividir</button>
+        <button onclick="evaluarOperacion('-')">Restar</button>
+        <button onclick="evaluarOperacion('*')">Multiplicar</button>
+        <button onclick="evaluarOperacion('/')">Dividir</button>
 
-        <label id="id_resultado" for="id_n2">Resultado</label>
+        <br>
+
+        <div>
+            <label class="" id="" for="">Resultado</label>
+            <label class="lbl_resultado" id="id_resultado" for="id_n2"></label>
+        </div>
+        
         
 
     </section>
