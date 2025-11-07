@@ -57,7 +57,7 @@ function evaluarOperacion(tipo) {
 
 function fundamentosJS() {
     /* 3 Tipos de vatriables*/
-    var nombre = "Luis"; //antigua, ya es considerada obsoleta, tipado diamico
+    var nombreej = "Luis"; //antigua, ya es considerada obsoleta, tipado diamico
     let apellido = "Perenguez"; //variables cambiantes, tipado dinamico, no se necesita declarar el tipo de dato
     let apellido2 = 15; //se asignaque es un number, pero puede cambiar
     apellido2 = "Teran"; // no se recomienda estos cambios apesar de que se permite, se supone que debe tener un objetivo especifico, no puede cambiarse sin justificacion
@@ -65,7 +65,7 @@ function fundamentosJS() {
     let diassemana = ['Lunes', 'Martes', 'Miercoles', '.....'];
     const IVA = 12.8; //no es absoluto que sean en mayusculas, pero se necesita para la sintaxis
     console.log('Fundamentos de JS');
-    console.log(nombre);
+    console.log(nombreej);
     console.log(IVA);
     console.log(arreglo);
     /*Arreglos */
@@ -148,8 +148,113 @@ function fundamentosJS() {
     //of para arreglos
     for (let clave in profesor) {
         console.log(clave);
-        console.log(profesor[clave]);
-        
+        console.log(profesor[clave]); 
+    }
+     const e1 = {
+        nombre: 'Michael',
+        apellido: 'Cevallos',
+        edad: 26,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito'
+    }
+     const e2 = {
+        nombre: 'Andres',
+        apellido: 'Cueva',
+        edad: 27,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito'
+    }
+    const arreglosEstudiantes = [e1,e2,{ 
+        nombre: 'Andres',
+        apellido: 'Cueva',
+        edad: 27,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito'
+    }];
+    console.log(arreglosEstudiantes[0]);
+    console.log(arreglosEstudiantes[2]);
+    
+
+    /* Desestructuración */
+    //Arreglos
+    const ar1 =[1, 2, 3, 4, 5, 6, 7];
+    const [p1, p2, p3, p4, p5]=ar1;
+    console.log(p1);
+    console.log(p5);
+
+    const [primero,,,,,, ultimo] = ar1
+    console.log(primero);
+    console.log(ultimo);
+
+    const [pos1, pos2] =[1, 2, 3, 4, 5, 6, 7];
+    imprime(ar1);
+
+    //Objetos
+
+    const e3 = {
+        nombre: 'Juan',
+        apellido: 'Cueva',
+        edad: 27,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito'
     }
 
+    const { nombre, ciudad } = e3;
+    console.log(nombre);
+    console.log(ciudad);
+    
+
+    const { nombre:n, ciudad:ciu } = {
+        nombre: 'Jose',
+        apellido: 'Jose',
+        edad: 27,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito'
+    }
+
+    console.log(n);
+    console.log(ciu);
+
+     const e4 = {
+        nombre: 'Juan',
+        apellido: 'Cueva',
+        edad: 27,
+        ecuatoriano: true,
+        genero: 'M',
+        ciudad: 'Quito',
+        direccion:{
+            calle:"Av.America",
+            barrio:"LaGasca",
+            numeracion:"oe-415"
+        }
+    }
+    console.log(e4.direccion);
+    console.log(e4.direccion.barrio);  
+
+    const {edad:ed, direccion} = e4;
+    console.log(ed);
+    console.log(direccion);
+    const {calle} = direccion;
+    console.log(calle);
+    
+    const {direccion:{barrio, calle:c1, numeracion}} = e4;
+    console.log(barrio);
+    console.log(c1);
+    console.log(numeracion);
+    
+    
+
+}
+
+function imprime([a,b,c]){
+    console.log(a);
+    console.log(b);
+    console.log(c);
+
+    
 }
