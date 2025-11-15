@@ -1,0 +1,87 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 280px;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen {
+    margin: 20px;
+}
+
+.formulario {}
+
+p {
+    font-family: sans-serif;
+}
+
+p:before {
+    content: attr(type);
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    height: 25px;
+}
+
+.form_separado {
+    display: flex;
+    flex-direction: row;
+    width: 10px;
+}
+
+.form_grandes {
+    
+    width: 235px;
+}
+
+.form_pequeños {
+    margin-right: 65px;
+    width: 80px
+}
+
+h2 {
+
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.centra_boton {
+    align-content: center;
+    text-align: center;
+
+}
+
+button {
+    /* width: 180px;
+    height: 50px; */
+    padding: 10px 85px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px;
+    color: rgb(247, 247, 247);
+    background: rgb(128, 135, 228);
+    border-radius: 5px;
+}
+
+.msg_error {
+    background: rgb(128, 135, 228);
+    border-left: 5px solid rgb(93, 102, 236);
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    display: none;
+    border-radius: 15px;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.error_asterisco {
+    color: brown;
+    font-weight: bold;
+    font-size: 30px; 
+}
+
